@@ -10,7 +10,22 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
+            string name = Console.ReadLine();
+            string surname = Console.ReadLine();
+            string age = Console.ReadLine();
+
+            int convertedAge = Int16.Parse(age);
+            //int convertAgeMethod2 = Convert.ToInt16(age);
+            //int convertAgeMethod3 = 0;
+
+            //bool isParse = Int32.TryParse(age, out convertAgeMethod3);
+
+            Student s = new Student(name, surname, convertedAge);
+            Console.WriteLine(s);
+
             Console.WriteLine("");
+
+            Console.ReadKey();
         }
     }
 }

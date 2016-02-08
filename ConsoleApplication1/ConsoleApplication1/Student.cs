@@ -10,16 +10,17 @@ namespace ConsoleApplication1
     {
         public string Name;
         public string Surname;
-
-        public Student(string _name, string _surname)
+        public int age;
+        public Student(string _name, string _surname, int age)
         {
             this.Name = _name;
             this.Surname = _surname;
+            this.age = age;
         }
 
         public override string ToString()
         {
-            return "This student name is " + Name + " " + Surname;
+            return "This student name is " + Name + " " + Surname+ " "+age ;
         }
     }
 }
